@@ -13,11 +13,12 @@ body {
   .video-container {
     position: relative;
     width: 100%;
-    max-width: 800px; /* Optional: Adjust max width */
+    max-width: 90%; /* Optional: Adjust max width */
     margin: 0 auto;
     height: 0;
-    padding-bottom: 75%; /* 16:9 Aspect Ratio */
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
     overflow: hidden;
+    justify-content: center;
 }
 
 .video-container iframe {
