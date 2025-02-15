@@ -30,3 +30,7 @@ body {
     height: 100%;
     border: none;
 }
+
+#home {
+    scroll-margin-top: 80px; /* Adjust the value as needed */
+  }
