@@ -34,3 +34,13 @@ body {
 #home {
     scroll-margin-top: 60px; /* Adjust the value as needed */
   }
+
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+    align-items: center;     /* Centers horizontally */
+    min-height: 100vh;       /* Makes sure it takes up at least the full viewport height */
+    text-align: center;      /* Centers text inside the container */
+  }
+  
