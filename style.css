@@ -53,12 +53,13 @@ body {
   .photo-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+    gap: 10px; /* Space between images */
     padding: 20px;
     justify-content: center;
+    grid-auto-flow: dense; /* Forces elements to fill gaps */
 }
 
-/* Custom layout for vertical images */
+/* styling for images */
 .photo img {
     width: 100%;
     height: auto;
@@ -67,14 +68,19 @@ body {
     border-radius: 10px;
     transition: transform 0.2s ease-in-out;
     will-change: transform, box-shadow;
+}
 
-              /* allows for smooth animation */
+/* Make vertical images take up more grid space */
+.photo img[alt*="vertical"] {
+    grid-row: span 2; 
 }
-/* creates hover effect for images */
+
+/* Hover effect */
 .photo img:hover {
-  transform: scale(1.1);  
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
+
 
 /* Modal Styles */
 .modal {
