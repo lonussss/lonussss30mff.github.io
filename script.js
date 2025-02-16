@@ -2,7 +2,7 @@
 function openModal(imgElement) {
     const modal = document.getElementById("photoModal");
     const modalImage = document.getElementById("modalImage");
-    modal.style.display = "flex";
+    modal.style.display = "flex"; // Shows the modal only when an image is clicked
     modalImage.src = imgElement.src;
 }
 
@@ -11,7 +11,7 @@ function closeModal() {
     document.getElementById("photoModal").style.display = "none";
 }
 
-// Prevent modal from closing when clicking the image
+// Prevent modal from closing when clicking the image itself
 document.getElementById("modalImage").addEventListener("click", function(event) {
     event.stopPropagation();
 });
