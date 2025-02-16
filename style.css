@@ -19,7 +19,7 @@ body {
   .video-container {
     position: relative;
     width: 100%;
-    max-width:  800px; /* Optional: Adjust max width */
+    max-width:100%; /* Optional: Adjust max width */
     margin: 0 auto;
     height: 0;
     padding-bottom: 56.25%;
@@ -36,9 +36,9 @@ body {
     height: 100%;
     border: none;
 }
-
+/* added scroll margin on top */
 #home {
-    scroll-margin-top: 60px; /* Adjust the value as needed */
+    scroll-margin-top: 60px; 
   }
 
   #contact {
