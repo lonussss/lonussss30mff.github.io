@@ -1,7 +1,7 @@
 // Ensure JavaScript runs after page is fully loaded
 document.addEventListener("DOMContentLoaded", function() {
 
-    // Function to open the modal with the clicked image
+    // open modal when image is clicked
     function openModal(imgElement) {
         const modal = document.getElementById("photoModal");
         const modalImage = document.getElementById("modalImage");
@@ -14,6 +14,13 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("photoModal").style.display = "none";
     }
 
+    // Ensure clicking outside the image closes the modal
+    document.getElementById("photoModal").addEventListener("click", function(event) {
+        if (event.target === this) { // Ensures it only closes if clicking outside the image
+            closeModal();
+        }
+    });
+
     // Prevent modal from closing when clicking the image itself
     const modalImage = document.getElementById("modalImage");
     if (modalImage) {
@@ -22,17 +29,17 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Event listener to close modal when pressing the Escape key
+    // close modal when escape key is pressed
     document.addEventListener("keydown", function(event) {
         if (event.key === "Escape") {
             closeModal();
         }
     });
 
-    // Make sure modal is hidden on page load
+    // Hide modal on loading page
     document.getElementById("photoModal").style.display = "none";
 
-    // Attach openModal to all images dynamically
+    // add modal to each image
     document.querySelectorAll(".photo img").forEach(img => {
         img.addEventListener("click", function() {
             openModal(this);
