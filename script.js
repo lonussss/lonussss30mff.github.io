@@ -29,17 +29,25 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // close modal when escape key is pressed
+    // Close modal when escape key is pressed
     document.addEventListener("keydown", function(event) {
         if (event.key === "Escape") {
             closeModal();
         }
     });
 
+    // Add event listener to the close button (fix for "X" button)
+    const closeButton = document.querySelector(".close-btn");
+    if (closeButton) {
+        closeButton.addEventListener("click", function() {
+            closeModal();
+        });
+    }
+
     // Hide modal on loading page
     document.getElementById("photoModal").style.display = "none";
 
-    // add modal to each image
+    // Add modal functionality to each image
     document.querySelectorAll(".photo img").forEach(img => {
         img.addEventListener("click", function() {
             openModal(this);
