@@ -57,21 +57,18 @@
       <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">PHOTO GALLERY</span></h5>
 
       <div class="photo-gallery">
-          <div class="photo"><img src="media/photo1.JPG" alt="Photo 1"></div>
-          <div class="photo"><img src="media/photo2.JPG" alt="Photo 2"></div>
-          <div class="photo"><img src="media/photo3.JPG" alt="Photo 3"></div>
-          <div class="photo"><img src="media/photo4.JPG" alt="Photo 4"></div>
-          <div class="photo"><img src="media/photo5.JPG" alt="Photo 5"></div>
-          <div class="photo"><img src="media/photo6.JPG" alt="Photo 6"></div>
+          <div class="photo"><img src="media/photo1.JPG" alt="Photo 1" onclick="openModal(this)"></div>
+          <div class="photo"><img src="media/photo2.JPG" alt="Photo 2" onclick="openModal(this)"></div>
+          <div class="photo"><img src="media/photo3.JPG" alt="Photo 3" onclick="openModal(this)"></div>
+          <div class="photo"><img src="media/photo4.JPG" alt="Photo 4" onclick="openModal(this)"></div>
+          <div class="photo"><img src="media/photo5.JPG" alt="Photo 5" onclick="openModal(this)"></div>
+          <div class="photo"><img src="media/photo6.JPG" alt="Photo 6" onclick="openModal(this)"></div>
       </div>
   </div>
 </div>
 
-<!-- Modal for Enlarged Photo -->
-<div id="photoModal" class="modal" onclick="closeModal()">
-  <span class="close-btn" onclick="closeModal()">&times;</span>
-  <img class="modal-content" id="modalImage">
-</div>
+
+
 
 
   <!-- Contact/Area Container -->
@@ -85,6 +82,11 @@
   </div>
 </div>
 
+<!-- Modal for Enlarged Photo -->
+<div id="photoModal" class="modal" onclick="closeModal()">
+  <span class="close-btn" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
 <script src="script.js"></script>
 
 </body>
