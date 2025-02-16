@@ -98,20 +98,7 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-/* Close Button */
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 40px;
-  color: white;
-  cursor: pointer;
-  transition: 0.3s;
-}
 
-.close-btn:hover {
-  color: #f44336;
-}
 
 /* Fade-in animation */
 @keyframes fadeIn {

@@ -36,14 +36,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Add event listener to the close button (fix for "X" button)
-    const closeButton = document.querySelector(".close-btn");
-    if (closeButton) {
-        closeButton.addEventListener("click", function() {
-            closeModal();
-        });
-    }
-
     // Hide modal on loading page
     document.getElementById("photoModal").style.display = "none";
 
