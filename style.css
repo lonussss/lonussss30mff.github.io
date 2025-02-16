@@ -59,13 +59,17 @@ body {
 }
 
 .photo img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);  
+              /* allows for smooth animation */
+}
+/* creates hover effect for images */
+.photo img:hover {
+  transform: scale(1.5);  
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
 }
 
-.photo img:hover {
-    transform: scale(1.05);
-}
