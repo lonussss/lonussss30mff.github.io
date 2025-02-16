@@ -47,9 +47,6 @@
     <div class="w3-content" style="max-width:700px;">
       <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT </span></h5>
       <p>Linus is a 2nd year student from Taiwan studying at New York University majoring in Interactive Media and minoring in computer science. </p>
-      <div class="w3-panel  w3-light-grey">
-        <p><i>Skills: Coding, Photography, Djing </i></p>
-      </div>
       <img src="media/Portrait.JPG" style="width:100%;max-width:1000px" class="w3-margin-top" >
   </div>
 </div>
@@ -70,6 +67,11 @@
   </div>
 </div>
 
+<!-- Modal for Enlarged Photo -->
+<div id="photoModal" class="modal" onclick="closeModal()">
+  <span class="close-btn" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
 
 
   <!-- Contact/Area Container -->
@@ -82,3 +84,8 @@
   
   </div>
 </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
