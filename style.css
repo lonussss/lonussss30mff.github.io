@@ -20,7 +20,7 @@ body {
     margin-top:50px;
     position: relative;
     width: 100%;
-    max-width:960px; /* Optional: Adjust max width */
+    max-width:100%; /* Optional: Adjust max width */
     margin: 0 auto;
     height: 0;
     padding-bottom: 56.25%;
