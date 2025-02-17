@@ -119,3 +119,28 @@ body {
 }
 
 
+#contact a {
+  text-decoration: none;
+  border: none;
+}
+
+/* Style for the clickable icons */
+.contact-link {
+  text-decoration: none; 
+  cursor: pointer;        /* Change cursor on hover */
+  transition: transform 0.2s, color 0.2s; /* Smooth hover effects */
+  color: inherit;   
+  display: inline-block;  /* Prevent extra spacing issues */
+}
+
+/* Hover effects */
+.contact-link:hover {
+  color: #007BFF;        /* Change icon color on hover */
+  transform: scale(1.1); /*  enlarge icon on hover */
+}
+
+/* Style for the text next to the icons */
+.contact-text {
+  display: inline-block;
+  margin-left: 0.2em;    
+}
